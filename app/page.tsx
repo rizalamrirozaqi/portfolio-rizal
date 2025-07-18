@@ -19,9 +19,9 @@ export default function Home() {
 
   return (
     <div className="font-sans min-h-screen w-full overflow-hidden relative">
-      <div className="absolute top-0 left-0 w-full h-full">
       <div className="absolute top-0 right-0 bg-gradient-to-bl from-transparent to-blue-600/5 w-screen h-screen z-90 pointer-events-none"></div>
       <div className="absolute top-0 right-0 bg-gradient-to-br from-transparent to-blue-600/5 w-screen h-screen z-90 pointer-events-none"></div>
+      <div className="absolute top-0 left-0 w-full h-full">
         <header className="hidden absolute top-0 left-0 md:flex flex-row w-full max-h-xl border-blue-600 border-b-2 sm:px-20 sm:py-3">
           <div className="flex flex-row justify-start items-center w-full h-full">
             <Link href="/portfolio" className="w-full h-full text-nowrap rounded-lg px-4 py-2  header-responsive hover:text-blue-400 group">
