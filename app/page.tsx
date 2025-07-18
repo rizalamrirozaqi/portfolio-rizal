@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <div className="font-sans flex flex-col items-start justify-items-start min-h-screen pt-20 px-20 gap-16 sm:px-20 sm:pt-20 overflow-x-hidden relative overflow-auto md:overflow-hidden">
-      <Image width={5000} height={5000} src="/assets/img/person/4.png" alt="RizalAmriRozaqi" className="w-2xl h-2xl z-70 rounded-lg drop-shadow-xl absolute -bottom-5 right-50 up-down 2xl:block hidden " />
+      <Image width={1000} height={1000} src="/assets/img/person/4.png" alt="RizalAmriRozaqi" className="w-2xl h-2xl z-70 rounded-lg drop-shadow-xl absolute -bottom-5 right-50 up-down 2xl:block hidden " />
       <header className="hidden absolute top-0 left-0 md:flex flex-row w-full max-h-xl border-blue-600 border-b-2 sm:px-20 sm:py-3">
         <div className="flex flex-row justify-start items-center w-full h-full">
           <Link href="/portfolio" className="w-full h-full text-nowrap rounded-lg px-4 py-2  header-responsive hover:text-blue-400 group">
