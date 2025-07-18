@@ -24,3 +24,231 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes fadeScroll {
+  from {
+    opacity: 0;
+    transform: translate(-100px);
+    /* transform: scale(0.5); */
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+    /* transform: scale(1); */
+  }
+}
+
+@keyframes fadeScrollMobile {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.appear {
+  animation: fadeScroll 0.5s linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+
+@media (max-width: 639px) {
+  .appear {
+    animation: fadeScrollMobile 0.5s linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+  }
+}
+
+@keyframes colorScroll {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #09090b; 
+  }
+}
+
+.appear-card-colors {
+  animation: fadeScroll 0.5s linear, colorScroll 0.5s linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+
+@media (max-width:639px) {
+  .appear-card-colors {
+    animation: fadeScroll 0.5s linear, colorScroll 0.5s linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+  }
+}
+
+
+.superheading-responsive {
+  @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-bold;
+}
+
+.heading-responsive {
+  @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold;
+}
+
+.header-responsive {
+  @apply text-xs sm:text-base;
+}
+
+.link-responsive {
+  @apply text-xs sm:text-base font-semibold;
+}
+
+.base-responsive {
+  @apply text-sm sm:text-base;
+}
+
+@keyframes typing {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width : 100%;
+      }
+}
+@keyframes blink {
+  0% { color: 'transparent' }
+  100% { color: 'black' }
+}
+.typing {
+  animation: typing 1.5s steps(10) forwards, blink 0.35s step-end infinite;
+/* typing: 'typing 3s steps(20) forwards',
+blink: 'blink 0.7s step-end infinite' */
+}
+
+
+@keyframes rotateLeft{
+  0%{
+    transform: rotate(10deg) translateX(1000px) translateY(-50px);
+  }
+  100%{
+    transform: rotate(-10deg) translateX(0px) translateY(0px);
+  }
+}
+
+.rotate-left {
+  animation: rotateLeft 1s ease-in-out;
+  transform: rotate(-10deg) translateX(0px) translateY(0px);
+}
+
+
+.delay-75 {
+  animation-delay: 0.75s;
+}
+.delay-100 {
+  animation-delay: 0.1s;
+}
+.delay-200 {
+  animation-delay: 0.2s;
+}
+.delay-300 {
+  animation-delay: 0.3s;
+}
+.delay-400 {
+  animation-delay: 0.4s;
+}
+.delay-500 {
+  animation-delay: 0.5s;
+}
+.delay-600 {
+  animation-delay: 0.6s;
+}
+.delay-700 {
+  animation-delay: 0.7s;
+}
+.delay-800 {
+  animation-delay: 0.8s;
+}
+.delay-900 {
+  animation-delay: 0.9s;
+}
+.delay-1000 {
+  animation-delay: 1s;
+}
+
+
+
+
+@keyframes rightLeft {
+  0% {
+    transform: translateX(-10px);
+  }
+  50%{
+    transform: translateX(10px);
+  }
+  100%{
+    transform: translateX(-10px);
+  }
+}
+
+.right-left {
+  animation: rightLeft 1s linear infinite;
+}
+
+
+
+
+/* @keyframes leftInPerson1{
+  0%{
+    transform: translateX(1000px) rotate(30deg) scale(1);;
+  }
+  100%{
+    transform: translateX(0) rotate(-10deg) scale(0.5);
+  }
+} */
+/* @keyframes leftInPerson2{
+  0%{
+    transform: translateX(1000px) rotate(30deg) scale(1.5);;
+  }
+  100%{
+    transform: translateX(0) rotate(-10deg) scale(0.7);
+  }
+}
+@keyframes leftInPerson3{
+  0%{
+    transform: translateX(1000px) rotate(30deg) scale(2);;
+  }
+  100%{
+    transform: translateX(0) rotate(-10deg) scale(1);
+  }
+} */
+
+
+/* .left-in-person1{
+  animation: leftInPerson1 1s ease-in-out;
+  transform: rotate(-10deg) scale(0.5);
+} */
+/* .left-in-person2{
+  animation: leftInPerson2 1s ease-in-out;
+  transform: rotate(-10deg) scale(0.7);
+}
+.left-in-person3{
+  animation: leftInPerson3 1s ease-in-out;
+  transform: rotate(-10deg) scale(1);
+} */
+
+
+@keyframes upDown{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-10px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.up-down{
+  animation: upDown 3s ease-in-out infinite;
+  transform: translateY(0);
+}
