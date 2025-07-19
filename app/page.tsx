@@ -18,11 +18,11 @@ export default function Home() {
   },[]);
 
   return (
-    <div className="font-sans min-h-screen h-full w-full overflow-auto md:overflow-hidden relative">
-      <div className="absolute top-0 right-0 bg-gradient-to-bl from-transparent to-blue-600/5 w-screen h-screen z-90 pointer-events-none"></div>
-      <div className="absolute top-0 right-0 bg-gradient-to-br from-transparent to-blue-600/5 w-screen h-screen z-90 pointer-events-none"></div>
-      <div className="h-full w-full ">
-        <div className="absolute top-0 left-0 w-full h-full py-10 md:py-0">
+    <div className="font-sans min-h-screen h-full w-full overflow-auto md:overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-full ">
+        <div className="relative w-full h-full overflow-auto md:overflow-hidden">
+          <div className="absolute top-0  right-0 bg-gradient-to-bl from-transparent to-blue-600/5 w-full h-full z-90 pointer-events-none hidden md:block"></div>
+          <div className="absolute top-0 right-0 bg-gradient-to-br from-transparent to-blue-600/5 w-full h-full z-90 pointer-events-none hidden md:block"></div>
           <header className="hidden absolute top-0 left-0 md:block w-full max-h-xl border-blue-600 border-b-2 sm:px-20 sm:py-3 z-90">
             <div className="flex flex-row justify-start items-center w-full h-full ">
               <Link href="/portfolio" className="w-auto h-full text-nowrap rounded-lg px-4 py-2  header-responsive hover:text-blue-400 group">
@@ -42,19 +42,18 @@ export default function Home() {
               </Link>
             </div>
           </header>
-          <div className="max-w-[1440px] mx-auto w-full h-full px-4 sm:px-6 lg:px-8 relative flex flex-col items-start gap-16 pt-20">
+          <div className="max-w-[1440px] mx-auto w-full h-auto px-4 sm:px-6 lg:px-8 relative flex flex-col items-start gap-16 py-20">
+            <div className="absolute top-0  right-0 bg-gradient-to-bl from-transparent to-blue-600/5 w-full h-full z-90 pointer-events-none md:hidden block"></div>
+            <div className="absolute top-0 right-0 bg-gradient-to-br from-transparent to-blue-600/5 w-full h-full z-90 pointer-events-none md:hidden block"></div>
             <Image width={1000} height={1000} src="/assets/img/person/4.png" alt="RizalAmriRozaqi" className="w-2xl h-2xl z-70 rounded-lg drop-shadow-xl absolute lg:top-60 lg:right-20 top-60 -right-50 up-down lg:block hidden " />
-            
-
-            {/* <div className="absolute top-0 right-0 bg-gradient-to-t from-transparent to-black/5 dark:from-transparent dark:to-white/5 w-full h-full z-20 pointer-events-none"></div> */}
-              <div className="flex flex-row relative w-full h-full ">
+              <div className="flex relative w-full h-full ">
                   <Play className=" absolute top-0 right-30 md:top-0 md:right-20 stroke2 stroke-blue-200 h-16 w-16 md:h-[350px] md:w-[350px] rotate-left"  />
                   <LoaderCircle className="absolute top-0 right-26 2xl:top-32 2xl:right-10 stroke2 stroke-blue-200 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rotate-left delay-200"  />
                   <CircleChevronDown className=" absolute top-10 right-28 2xl:top-0 2xl:right-0 stroke2 stroke-blue-200 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rotate-left delay-500"  />
                   <Circle className=" absolute top-18 right-22 2xl:top-0 2xl:right-20 stroke2 stroke-blue-200 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rotate-left delay-600"  />
 
 
-                <div className="flex flex-col gap-28 items-center sm:items-start relative w-full h-full">
+                <div className="flex flex-col gap-10 lg:gap-28 items-center sm:items-start relative w-full h-full">
 
                   <div className="w-full h-full items-center justify-center hidden max-lg:flex ">
                     <div className="overflow-hidden rounded-full bg-white/70">
@@ -62,7 +61,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="flex items-start md:justify-start justify-center pt-28 flex-col">
+                  <div className="flex items-start md:justify-start justify-center lg:pt-28 flex-col">
                       <h1 className="superheading-responsive typing overflow-hidden text-nowrap z-10">Hi, I&apos;m Rizal Amri Rozaqi</h1>
                       <h1 className="superheading-responsive typing overflow-hidden text-nowrap z-10 delay-300">Web Developer</h1>
                   </div>
@@ -113,7 +112,7 @@ export default function Home() {
                   </div>
 
 
-                  <footer className="flex gap-[24px] flex-wrap items-center justify-center">
+                  <div className="grid grid-cols-2 grid-rows-auto gap-5 lg:flex lg:flex-row ">
                     <a className="flex items-center gap-2 hover:underline hover:underline-offset-4 link-responsive" href="https://www.linkedin.com/in/rizal-amri-764281311">
                       <Linkedin size={16}/>
                       <p>Rizal Amri</p>
@@ -130,39 +129,25 @@ export default function Home() {
                       <AtSign size={16}/>
                       <p>rizalamrirozaqi@gmail.com</p>
                     </a>
-                  </footer>
-
-                  <section>
-                    <div className="md:flex w-full h-full justify-center items-center hidden gap-7">
-                      <Link href="/portfolio" className="flex flex-row gap-2 items-center justify-center overflow-hidden text-white dark:text-black px-4 py-2 rounded-full bg-gray-800 dark:bg-slate-100 relative 
-                      before:content-[''] before:w-full before:h-0 before:bg-blue-200 hover:before:h-full before:transition-all before:duration-300 before:absolute before:bottom-0 
-                      after:content-[''] after:w-full after:h-0 after:bg-blue-400 hover:after:h-full after:transition-all after:duration-300 after:absolute after:bottom-0 after:delay-100
-                      ">
-                        <p className="z-10 link-responsive">Go To Portfolio</p>
-                        <ChevronRight className="w-auto h-auto right-left z-10" />
-                      </Link>
-                      <Link href="/cv" className="flex flex-row gap-2 items-center justify-center overflow-hidden text-white dark:text-black px-4 py-2 rounded-full bg-gray-800 dark:bg-slate-100 relative 
-                      before:content-[''] before:w-full before:h-0 before:bg-blue-200 hover:before:h-full before:transition-all before:duration-300 before:absolute before:bottom-0 
-                      after:content-[''] after:w-full after:h-0 after:bg-blue-400 hover:after:h-full after:transition-all after:duration-300 after:absolute after:bottom-0 after:delay-100
-                      ">
-                        <p className="z-10 link-responsive">Go To Curriculum Vitae</p>
-                        <ChevronRight className="w-auto h-auto right-left z-10" />
-                      </Link>
-                    </div>
-                  </section>
-                </div>
-
-
-                {/* <img src="/assets/img/person/5.png" alt="RizalAmriRozaqi" className="w-sm h-sm z-80 bg-white rounded-lg drop-shadow-xl left-in-person2 absolute -bottom-70 right-50 " />
-                <img src="/assets/img/person/5.png" alt="RizalAmriRozaqi" className="w-sm h-sm z-90 bg-white rounded-lg drop-shadow-xl left-in-person3 absolute -bottom-70 -right-30 " /> */}
-
-
-                {/* <div className="w-full h-full flex flex-col justify-center items-end ">
-                  <div className="flex h-full w-full"></div>
-                  <div className="flex h-full w-full">
-                    <img src="/assets/img/person/4.png" alt="RizalAmriRozaqi" className="w-md h-md z-90 bg-white rounded-lg drop-shadow-blue-600-lg left-in-person" />
                   </div>
-                </div> */}
+
+                  <div className="md:flex w-full h-full  items-center hidden gap-7">
+                    <Link href="/portfolio" className="flex flex-row gap-2 items-center justify-center overflow-hidden text-white dark:text-black px-4 py-2 rounded-full bg-gray-800 dark:bg-slate-100 relative 
+                    before:content-[''] before:w-full before:h-0 before:bg-blue-200 hover:before:h-full before:transition-all before:duration-300 before:absolute before:bottom-0 
+                    after:content-[''] after:w-full after:h-0 after:bg-blue-400 hover:after:h-full after:transition-all after:duration-300 after:absolute after:bottom-0 after:delay-100
+                    ">
+                      <p className="z-10 link-responsive">Go To Portfolio</p>
+                      <ChevronRight className="w-auto h-auto right-left z-10" />
+                    </Link>
+                    <Link href="/cv" className="flex flex-row gap-2 items-center justify-center overflow-hidden text-white dark:text-black px-4 py-2 rounded-full bg-gray-800 dark:bg-slate-100 relative 
+                    before:content-[''] before:w-full before:h-0 before:bg-blue-200 hover:before:h-full before:transition-all before:duration-300 before:absolute before:bottom-0 
+                    after:content-[''] after:w-full after:h-0 after:bg-blue-400 hover:after:h-full after:transition-all after:duration-300 after:absolute after:bottom-0 after:delay-100
+                    ">
+                      <p className="z-10 link-responsive">Go To Curriculum Vitae</p>
+                      <ChevronRight className="w-auto h-auto right-left z-10" />
+                    </Link>
+                  </div>
+                </div>
               </div>
           </div>
         </div>
