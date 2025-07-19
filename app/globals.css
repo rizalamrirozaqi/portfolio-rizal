@@ -115,8 +115,9 @@ body {
       }
 }
 @keyframes blink {
-  0% { color: 'transparent' }
-  100% { color: 'black' }
+  50% {
+    border-color: transparent;
+  }
 }
 .typing {
   animation: typing 1.5s steps(10) forwards, blink 0.35s step-end infinite;

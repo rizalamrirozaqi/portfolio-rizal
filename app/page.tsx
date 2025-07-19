@@ -22,30 +22,28 @@ export default function Home() {
       <div className="absolute top-0 right-0 bg-gradient-to-bl from-transparent to-blue-600/5 w-screen h-screen z-90 pointer-events-none"></div>
       <div className="absolute top-0 right-0 bg-gradient-to-br from-transparent to-blue-600/5 w-screen h-screen z-90 pointer-events-none"></div>
       <div className="h-full w-full ">
-        <div className="absolute top-0 left-0 w-full h-full">
-          <header className="hidden absolute top-0 left-0 md:flex flex-row w-full max-h-xl border-blue-600 border-b-2 sm:px-20 sm:py-3">
-            <div className="flex flex-row justify-start items-center w-full h-full">
-              <Link href="/portfolio" className="w-full h-full text-nowrap rounded-lg px-4 py-2  header-responsive hover:text-blue-400 group">
+        <div className="absolute top-0 left-0 w-full h-full py-10 md:py-0">
+          <header className="hidden absolute top-0 left-0 md:block w-full max-h-xl border-blue-600 border-b-2 sm:px-20 sm:py-3 z-90">
+            <div className="flex flex-row justify-start items-center w-full h-full ">
+              <Link href="/portfolio" className="w-auto h-full text-nowrap rounded-lg px-4 py-2  header-responsive hover:text-blue-400 group">
                 <p className="group-hover:-translate-y-2">Portfolio</p>
               </Link>
-              <Link href="/cv" className="w-full h-full text-nowrap rounded-lg px-4 py-2  header-responsive hover:text-blue-400 group">
+              <Link href="/cv" className="w-auto h-full text-nowrap rounded-lg px-4 py-2  header-responsive hover:text-blue-400 group">
                 <p className="group-hover:-translate-y-2">Curriculum Vitae</p>
               </Link>
-              <Link href="/softskill" className="w-full h-full text-nowrap rounded-lg px-4 py-2  header-responsive hover:text-blue-400 group">
+              <Link href="/softskill" className="w-auto h-full text-nowrap rounded-lg px-4 py-2  header-responsive hover:text-blue-400 group">
                 <p className="group-hover:-translate-y-2">Soft Skill</p>
               </Link>
-              <Link href="/hardskill" className="w-full h-full text-nowrap rounded-lg px-4 py-2  header-responsive hover:text-blue-400 group">
+              <Link href="/hardskill" className="w-auto h-full text-nowrap rounded-lg px-4 py-2  header-responsive hover:text-blue-400 group">
                 <p className="group-hover:-translate-y-2">Hard Skill</p>
               </Link>
-              <Link href="/" className="w-full h-full text-nowrap rounded-lg px-4 py-2  header-responsive hover:text-blue-400 group">
+              <Link href="/" className="w-auto h-full text-nowrap rounded-lg px-4 py-2  header-responsive hover:text-blue-400 group">
                 <p className="group-hover:-translate-y-2">About Me</p>
               </Link>
             </div>
-            <div className="flex flex-row justify-start items-center w-full h-full"></div>
-            <div className="flex flex-row justify-start items-center w-full h-full"></div>
           </header>
           <div className="max-w-[1440px] mx-auto w-full h-full px-4 sm:px-6 lg:px-8 relative flex flex-col items-start gap-16 pt-20">
-            <Image width={1000} height={1000} src="/assets/img/person/4.png" alt="RizalAmriRozaqi" className="w-2xl h-2xl z-70 rounded-lg drop-shadow-xl absolute top-60 right-20 up-down 2xl:block hidden " />
+            <Image width={1000} height={1000} src="/assets/img/person/4.png" alt="RizalAmriRozaqi" className="w-2xl h-2xl z-70 rounded-lg drop-shadow-xl absolute lg:top-60 lg:right-20 top-60 -right-50 up-down lg:block hidden " />
             
 
             {/* <div className="absolute top-0 right-0 bg-gradient-to-t from-transparent to-black/5 dark:from-transparent dark:to-white/5 w-full h-full z-20 pointer-events-none"></div> */}
@@ -58,7 +56,7 @@ export default function Home() {
 
                 <div className="flex flex-col gap-28 items-center sm:items-start relative w-full h-full">
 
-                  <div className="w-full h-full items-center justify-center hidden max-xl:flex ">
+                  <div className="w-full h-full items-center justify-center hidden max-lg:flex ">
                     <div className="overflow-hidden rounded-full bg-white/70">
                       <Image width={1000} height={1000} src="/assets/img/person/4.png" alt="RizalAmriRozaqi" className="w-full h-full" />
                     </div>
@@ -110,7 +108,7 @@ export default function Home() {
                   <div className="z-10 flex flex-col gap-3 max-w-3xl">
                     <h1 className="heading-responsive">About Me</h1>
                     <p className="base-responsive w-full h-full ">
-                      I&apos;m an Informatics Engineering student at Universitas Amikom Yogyakarta with a strong interest in web development. I have pretty solid foundation in frontend development and am eager to grow my skills further through real-world internship experience in the industry.
+                      I&apos;m an Informatics Engineering student at Universitas Amikom Yogyakarta with a strong interest in web development. I have pretty solid foundation in fullstack development and am eager to grow my skills further through real-world internship experience in the industry.
                     </p>
                   </div>
 
