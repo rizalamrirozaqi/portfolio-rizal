@@ -2,7 +2,9 @@ import Link from "next/link";
 
 export default function SoftSkill() {
   return (
-    <div className="min-h-screen pt-28 px-8 sm:px-20 flex flex-col gap-8">
+    <div className="min-h-screen w-full h-full relative pt-28 px-8 sm:px-20 flex flex-col gap-8">
+        <div className="absolute bottom-0 right-0 bg-gradient-to-bl from-transparent to-blue-600/5 w-full h-full z-90 pointer-events-none"></div>
+        <div className="absolute bottom-0 right-0 bg-gradient-to-br from-transparent to-blue-600/5 w-full h-full z-90 pointer-events-none"></div>
         <header className="hidden absolute top-0 left-0 md:flex flex-row w-full max-h-xl border-blue-600 border-b-2 sm:px-20 sm:py-3">
             <div className="flex flex-row justify-start items-center w-full h-full">
             <Link href="/portfolio" className="w-auto h-full rounded-lg px-4 py-2 font-semibold header-responsive hover:text-blue-400 group">
