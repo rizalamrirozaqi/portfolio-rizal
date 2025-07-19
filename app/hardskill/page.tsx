@@ -62,8 +62,7 @@ export default function HardSkillPage() {
             <li>HTML, CSS, JavaScript</li>
             <li>React.js, Next.js</li>
             <li>Tailwind CSS</li>
-            <li>PHP</li>
-            <li>Laravel</li>
+            <li>PHP, Laravel</li>
             <li>Git & GitHub</li>
             <li>REST API integration</li>
             <li>MySQL</li>

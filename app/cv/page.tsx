@@ -81,7 +81,7 @@ export default function CV() {
         <embed
             src="/assets/docs/cv-rizal.pdf"
             type="application/pdf"
-            className="w-full h-[80vh] rounded-lg mt-5"
+            className="w-full h-[80vh] rounded-lg mt-5 drop-shadow-2xl"
         />
     </div>
   );

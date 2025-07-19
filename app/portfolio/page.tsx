@@ -20,17 +20,11 @@ const component = ["/assets/img/portfolio/component/card.mp4", "/assets/img/port
 
 export default function Portfolio() {
   const renderImageSection = (title: string, items: string[], describe?:string) => (
-    <div className="mb-12 flex flex-col gap-2 bg-gray-800 dark:bg-zinc-950 p-8 rounded-lg appear-card-colors">
+    <div className="mb-12 flex flex-col gap-2 bg-gray-800 dark:bg-zinc-950 p-4 lg:p-20 rounded-xl appear-card-colors">
     {/* <div className="mb-12 flex flex-col gap-2 bg-gray-800 dark:bg-zinc-950 p-8 rounded-lg appear relative z-20
     before:content-[''] before:top-0 before:left-0 before:absolute before:w-full before:h-0 before:rounded-lg before:bg-blue-950 hover:before:h-full before:transition-all before:duration-100 before:ease before:-z-20
     after:content-[''] after:top-0 after:left-0 after:absolute after:w-full after:h-0 after:rounded-lg after:bg-gray-950 hover:after:h-full after:transition-all after:duration-100 after:ease after:delay-100 after:-z-10
     "> */}
-      <div className="absolute top-0 right-5 h-full w-32 
-                      border-x border-x-[--pattern-fg] 
-                      bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] 
-                      bg-[size:10px_10px] bg-fixed 
-                      [--pattern-fg:var(--color-gray-950)]/5 
-                      dark:[--pattern-fg:var(--color-white)]/10"></div>
       <h2 className="heading-responsive mb-4 w-full border-b-2 border-blue-600/10 hover:border-blue-600/70 appear">{title}</h2>
       {describe && <p className="base-responsive py-2a appear">{describe}</p>}
       <div className="overflow-x-auto appear">
@@ -61,7 +55,13 @@ export default function Portfolio() {
   );
 
   return (
-    <div className="min-h-screen h-full w-full pt-28 px-6 sm:px-20 relative">
+    <div className="min-h-screen h-full w-full pt-10 lg:pt-28 px-6 sm:px-20 relative ">
+      <div className="absolute top-0 right-5 h-full w-32 
+                      border-x border-x-[--pattern-fg] 
+                      bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] 
+                      bg-[size:10px_10px] bg-fixed 
+                      [--pattern-fg:var(--color-gray-950)]/5 
+                      dark:[--pattern-fg:var(--color-white)]/10"></div>
       <div className="md:hidden w-full h-full justify-center items-center gap-7 grid grid-cols-2">
         <Link href="/portfolio" className="flex flex-row gap-2 items-center justify-center overflow-hidden text-white dark:text-black px-4 py-2 rounded-full bg-gray-800 dark:bg-slate-100 relative 
             before:content-[''] before:w-full before:h-0 before:bg-blue-200 hover:before:h-full before:transition-all before:duration-300 before:absolute before:bottom-0 
@@ -118,7 +118,7 @@ export default function Portfolio() {
       <div className="absolute top-0 right-0 bg-gradient-to-bl from-transparent to-blue-600/5 w-full h-full z-90 pointer-events-none"></div>
       <div className="absolute top-0 right-0 bg-gradient-to-br from-transparent to-blue-600/5 w-full h-full z-90 pointer-events-none"></div>
 
-      <h1 className="superheading-responsive mb-10">Portfolio</h1>
+      <h1 className="superheading-responsive my-10 lg:mb-10 lg:my-0">Portfolio</h1>
       {renderImageSection("Portfolio Site", portfolioSaiful, "In the fourth semester, I helped a friend create a personal portfolio website and a landing page. The project involved designing a clean, responsive layout and structuring content to showcase their skills and works. This experience allowed me to improve my frontend development and collaboration skills, while also learning how to translate someone else’s vision into a functional web presence.")}
       {renderImageSection("Ventra", ventra, "In the fourth semester, I was assigned a project for the Project Management course that required me to develop a website. This led to the creation of Ventra, a web-based escrow platform designed for secure buying and selling of game accounts. I was responsible for the entire development process — from planning and designing the interface to building the core system — all while applying the project management principles I had learned throughout the course. This project not only fulfilled academic requirements but also provided valuable hands-on experience in turning an idea into a fully functional digital product.")}
       {renderImageSection("Quizu", quizu, "For my final project, I developed Quizu, an interactive web-based quiz platform aimed at making programming education more engaging for students. The platform allows users to create, play, and compete in various programming-related quizzes. It features a point and ranking system, multiplayer battle mode, and categorized quiz maps. This project was a culmination of the knowledge and skills I acquired throughout my studies, and it reflects my interest in both education and web development.")}
