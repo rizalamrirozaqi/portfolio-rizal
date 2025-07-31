@@ -61,8 +61,8 @@ export default function HardSkillPage() {
         <ul className="list-disc list-inside space-y-4 base-responsive">
             <li>HTML, CSS, JavaScript</li>
             <li>React.js, Next.js</li>
-            <li>Tailwind CSS</li>
-            <li>PHP, Laravel</li>
+            <li>Tailwind CSS, Bootstrap</li>
+            <li>PHP, Codeigniter, Laravel</li>
             <li>Git & GitHub</li>
             <li>REST API integration</li>
             <li>MySQL</li>

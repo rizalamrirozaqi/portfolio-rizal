@@ -34,7 +34,6 @@ export default function Home() {
               <Link href="/softskill" className="w-auto h-full text-nowrap rounded-lg px-4 py-2  header-responsive hover:text-blue-400 group">
                 <p className="group-hover:-translate-y-2">Soft Skill</p>
               </Link>
-              <Link href="/hardskill" className="w-auto h-full text-nowrap rounded-lg px-4 py-2  header-responsive hover:text-blue-400 group">
                 <p className="group-hover:-translate-y-2">Hard Skill</p>
               </Link>
               <Link href="/" className="w-auto h-full text-nowrap rounded-lg px-4 py-2  header-responsive hover:text-blue-400 group">

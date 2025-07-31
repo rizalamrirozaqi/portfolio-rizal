@@ -20,7 +20,7 @@ const component = ["/assets/img/portfolio/component/card.mp4", "/assets/img/port
 
 export default function Portfolio() {
   const renderImageSection = (title: string, items: string[], describe?:string) => (
-    <div className="mb-12 flex flex-col gap-2 bg-gray-800 dark:bg-zinc-950 p-4 lg:p-20 rounded-xl appear-card-colors">
+    <div className="mb-12 flex flex-col gap-2 bg-gray-800 dark:bg-white/50 text-white dark:text-black p-4 lg:p-20 rounded-xl appear-card-colors">
     {/* <div className="mb-12 flex flex-col gap-2 bg-gray-800 dark:bg-zinc-950 p-8 rounded-lg appear relative z-20
     before:content-[''] before:top-0 before:left-0 before:absolute before:w-full before:h-0 before:rounded-lg before:bg-blue-950 hover:before:h-full before:transition-all before:duration-100 before:ease before:-z-20
     after:content-[''] after:top-0 after:left-0 after:absolute after:w-full after:h-0 after:rounded-lg after:bg-gray-950 hover:after:h-full after:transition-all after:duration-100 after:ease after:delay-100 after:-z-10
