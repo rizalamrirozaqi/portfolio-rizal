@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Rizal Amri Rozaqi",
   description: "Portfolio by Rizal Amri Rozaqi",
+  verification: {
+    google: "hT-5zdyxB2lYDGTrLN3nkYsqDJOC9ZQYBKM349WR4z8",
+  },
 };
 
 export default function RootLayout({
@@ -24,7 +27,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-    <meta name="google-site-verification" content="hT-5zdyxB2lYDGTrLN3nkYsqDJOC9ZQYBKM349WR4z8" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
