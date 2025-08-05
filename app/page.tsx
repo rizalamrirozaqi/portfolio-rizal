@@ -23,7 +23,7 @@ export default function Home() {
         <div className="relative w-full h-full overflow-auto md:overflow-hidden">
           <div className="absolute top-0  right-0 bg-gradient-to-bl from-transparent to-blue-600/5 w-full h-full z-90 pointer-events-none hidden md:block"></div>
           <div className="absolute top-0 right-0 bg-gradient-to-br from-transparent to-blue-600/5 w-full h-full z-90 pointer-events-none hidden md:block"></div>
-          <header className="hidden absolute top-0 left-0 md:block w-full max-h-xl border-blue-600 border-b-2 sm:px-20 sm:py-3 z-90">
+          <div className="hidden absolute top-0 left-0 md:block w-full max-h-xl border-blue-600 border-b-2 sm:px-20 sm:py-3 z-90">
             <div className="flex flex-row justify-start items-center w-full h-full ">
               <Link href="/portfolio" className="w-auto h-full text-nowrap rounded-lg px-4 py-2  header-responsive hover:text-blue-400 group">
                 <p className="group-hover:-translate-y-2">Portfolio</p>
@@ -34,13 +34,14 @@ export default function Home() {
               <Link href="/softskill" className="w-auto h-full text-nowrap rounded-lg px-4 py-2  header-responsive hover:text-blue-400 group">
                 <p className="group-hover:-translate-y-2">Soft Skill</p>
               </Link>
+              <Link href="/softskill" className="w-auto h-full text-nowrap rounded-lg px-4 py-2  header-responsive hover:text-blue-400 group">
                 <p className="group-hover:-translate-y-2">Hard Skill</p>
               </Link>
               <Link href="/" className="w-auto h-full text-nowrap rounded-lg px-4 py-2  header-responsive hover:text-blue-400 group">
                 <p className="group-hover:-translate-y-2">About Me</p>
               </Link>
             </div>
-          </header>
+          </div>
           <div className="max-w-[1440px] mx-auto w-full h-auto px-4 sm:px-6 lg:px-8 relative flex flex-col items-start gap-16 py-20">
             <div className="absolute top-0  right-0 bg-gradient-to-bl from-transparent to-blue-600/5 w-full h-full z-90 pointer-events-none md:hidden block"></div>
             <div className="absolute top-0 right-0 bg-gradient-to-br from-transparent to-blue-600/5 w-full h-full z-90 pointer-events-none md:hidden block"></div>
